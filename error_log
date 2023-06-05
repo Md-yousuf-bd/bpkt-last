@@ -1,0 +1,7 @@
+[15-Jan-2023 09:48:18 UTC] PHP Warning:  file_exists() expects parameter 1 to be a valid path, string given in /home/training/public_html/index.php on line 17
+[18-Jan-2023 06:03:33 UTC] PHP Warning:  file_exists() expects parameter 1 to be a valid path, string given in /home/training/public_html/index.php on line 17
+[18-Jan-2023 06:23:08 UTC] PHP Warning:  file_exists() expects parameter 1 to be a valid path, string given in /home/training/public_html/index.php on line 17
+[28-May-2023 12:09:10 Asia/Dhaka] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /home/training/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 338
+[28-May-2023 12:09:13 Asia/Dhaka] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 28672 bytes) in /home/training/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 338
+[28-May-2023 12:13:59 Asia/Dhaka] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /home/training/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 338
+[30-May-2023 11:07:09 Asia/Dhaka] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 28672 bytes) in /home/training/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 338
