@@ -162,17 +162,24 @@
                         for (let i = 0; i < unit_rows.length; i++) {
                             htm += '<tr>';
                             htm += '<td class="text-center">' + bn_Numbers((i + 1).toString()) + '</td>';
-                            htm += '<td class="text-center">' + unit_rows[i].fiscal_year + '</td>';
+                            htm += '<td class="text-center">' + unit_rows[i].unit_name + '</td>';
+                            // htm += '<td class="text-center">' + unit_rows[i].fiscal_year + '</td>';
                             htm += '<td class="text-center" style="min-width: 150px;">' + unit_rows[i]
-                                .unit_name + '</td>';
-                            htm += '<td class="text-center" style="min-width: 200px;">' + unit_rows[i].code +
-                                '</td>';
-                            htm += '<td class="text-center">' + unit_rows[i].memo + '</td>';
-                            htm += '<td class="text-center">' + unit_rows[i].memo_date + '</td>';
-                            htm += '<td class="text-right">' + unit_rows[i].demand + '</td>';
-                            htm += '<td class="text-right">' + unit_rows[i].allotment + '</td>';
-                            htm += '<td class="text-right">' + unit_rows[i].code_total + '</td>';
+                                .allotment + '</td>';
+                            // htm += '<td class="text-center" style="min-width: 200px;">' + unit_rows[i].code +
+                            //     '</td>';
+                            // htm += '<td class="text-center">' + unit_rows[i].memo + '</td>';
+                            // htm += '<td class="text-center">' + unit_rows[i].memo_date + '</td>';
+                            // htm += '<td class="text-right">' + unit_rows[i].demand + '</td>';
+                            // htm += '<td class="text-right">' + unit_rows[i].allotment + '</td>';
+                            // htm += '<td class="text-right">' + unit_rows[i].code_total + '</td>';
                             htm += '<td class="text-justify" style="min-width: 200px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';

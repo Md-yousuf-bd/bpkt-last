@@ -160,7 +160,9 @@ Route::group(['middleware' => ['auth', 'language']], function () {
     Route::group(['prefix' => 'unit-surrender', 'as' => 'unit-surrender'], function () {
         Route::get('/list', ['as' => '.index', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@index']);
         Route::get('/add', ['as' => '.create', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@create']);
+        Route::get('/add-unitExpense', ['as' => '.create-expense', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@create_unitExpense']);
         Route::post('/store', ['as' => '.store', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@store']);
+        Route::post('/store_expense', ['as' => '.store_expense', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@store_expense']);
         Route::get('/{unit_surrender}', ['as' => '.show', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@show']);
         Route::get('/edit/{unit_surrender}', ['as' => '.edit', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@edit']);
         Route::patch('/update/{unit_surrender}', ['as' => '.update', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@update']);
@@ -169,6 +171,9 @@ Route::group(['middleware' => ['auth', 'language']], function () {
         Route::post('/approved', ['as' => '.approved', 'middleware' => ['permission:approved-unit-surrender'], 'uses' => 'UnitSurrenderController@approved']);
         Route::post('/unapproved', ['as' => '.unapproved', 'middleware' => ['permission:unapproved-unit-surrender'], 'uses' => 'UnitSurrenderController@unapproved']);
     });
+
+    // // create new menu
+    // Route::group(['prefix' => ])
 
     Route::group(['prefix' => 'email', 'as' => 'email'], function () {
         Route::get('/list', ['as' => '.index', 'middleware' => ['permission:read-mail'], 'uses' => 'EmailController@index']);
