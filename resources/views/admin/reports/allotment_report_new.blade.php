@@ -109,21 +109,21 @@
                         htm +=
                             '<th rowspan="2" class="text-center" style="vertical-align: middle;">জেলা/ইউনিয়নের নাম</th>';
                         htm +=
-                            '<th colspan="3" class="text-center" style="vertical-align: middle;">সদর দপ্তর প্রশিক্ষণ (কোড যুক্ত হবে)</th>';
+                            '<th colspan="3" class="text-center" style="vertical-align: middle;">১২২০২০১-১০৫৯৫৪-<br>  সদর দপ্তর-৩২৩১৩০১-প্রশিক্ষণ</th>';
                         htm +=
                             '<th rowspan="2" class="text-center" style="vertical-align: middle;">সদর ইউনিটের মোট বরাদ্দকৃত অর্থের শতকরা হার</th>';
                         htm +=
-                            '<th colspan="3" class="text-center" style="vertical-align: middle;">সদর দপ্তর সম্মানী (কোড যুক্ত হবে)</th>';
+                            '<th colspan="3" class="text-center" style="vertical-align: middle;">১২২০২০১-১০৫৯৫৪-<br> সদর দপ্তর-৩২৫৭২০৬-সম্মানী</th>';
                         htm +=
                             '<th rowspan="2" class="text-center" style="vertical-align: middle;">সদর ইউনিটের মোট বরাদ্দকৃত অর্থের শতকরা হার</th>';
                         htm +=
-                            '<th colspan="3" class="text-center" style="vertical-align: middle;">ইন্সঃ প্রশিক্ষণ (কোড যুক্ত হবে)</th>';
+                            '<th colspan="3" class="text-center" style="vertical-align: middle;">১২২০২১৩-০০০০০০-<br> ইন্সঃ-৩২৩১৩০১-প্রশিক্ষণ</th>';
                         htm +=
                             '<th rowspan="2" class="text-center" style="vertical-align: middle;">সদর ইউনিটের মোট বরাদ্দকৃত অর্থের শতকরা হার</th>';
                         htm +=
-                            '<th colspan="3" class="text-center" style="vertical-align: middle;">ইন্সঃ সম্মানী (কোড যুক্ত হবে)</th>';
+                            '<th colspan="3" class="text-center" style="vertical-align: middle;">১২২০২১৩-০০০০০০-<br> ইন্সঃ-৩১১১৩৩২-সম্মানী</th>';
                         htm +=
-                            '<th rowspan="2" class="text-center" style="vertical-align: middle;">সদর ইউনিটের মোট বরাদ্দকৃত অর্থের শতকরা হার</th>';
+                            '<th rowspan="2" class="text-center" style="vertical-align: middle;">সদর ইউনিটের মোট বরাদ্দকৃত<br>  অর্থের শতকরা হার</th>';
 
                         htm += '</tr>';
 
@@ -135,19 +135,19 @@
 
                         htm += '<th class="text-center" style="vertical-align: middle;">বরাদ্দকৃত অর্থ</th>';
                         htm +=
-                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী অনুযায়ী মোট ব্যয়</th>';
+                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী <br> অনুযায়ী মোট ব্যয়</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;"> অবশিষ্ট</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;">বরাদ্দকৃত অর্থ</th>';
                         htm +=
-                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী অনুযায়ী মোট ব্যয়</th>';
+                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী <br> অনুযায়ী মোট ব্যয়</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;"> অবশিষ্ট</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;">বরাদ্দকৃত অর্থ</th>';
                         htm +=
-                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী অনুযায়ী মোট ব্যয়</th>';
+                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী <br> অনুযায়ী মোট ব্যয়</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;"> অবশিষ্ট</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;">বরাদ্দকৃত অর্থ</th>';
                         htm +=
-                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী অনুযায়ী মোট ব্যয়</th>';
+                            '<th class="text-center" style="vertical-align: middle;">বি-বিবরণী <br> অনুযায়ী মোট ব্যয়</th>';
                         htm += '<th class="text-center" style="vertical-align: middle;"> অবশিষ্ট</th>';
 
 
@@ -164,7 +164,7 @@
                             htm += '<td class="text-center">' + bn_Numbers((i + 1).toString()) + '</td>';
                             htm += '<td class="text-center">' + unit_rows[i].unit_name + '</td>';
                             // htm += '<td class="text-center">' + unit_rows[i].fiscal_year + '</td>';
-                            htm += '<td class="text-center" style="min-width: 150px;">' + unit_rows[i]
+                            htm += '<td class="text-center" style="min-width: 50px;">' + unit_rows[i]
                                 .allotment + '</td>';
                             // htm += '<td class="text-center" style="min-width: 200px;">' + unit_rows[i].code +
                             //     '</td>';
@@ -173,7 +173,7 @@
                             // htm += '<td class="text-right">' + unit_rows[i].demand + '</td>';
                             // htm += '<td class="text-right">' + unit_rows[i].allotment + '</td>';
                             // htm += '<td class="text-right">' + unit_rows[i].code_total + '</td>';
-                            htm += '<td class="text-justify" style="min-width: 200px;"></td>';
+                            htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';
                             htm += '<td class="text-justify" style="min-width: 20px;"></td>';

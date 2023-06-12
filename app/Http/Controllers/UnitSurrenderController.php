@@ -265,7 +265,6 @@ class UnitSurrenderController extends Controller
         }
         // $unit_expense->expense_month = $request->input('expense_month');
         $unit_expense->fiscal_year = otherHelper::get_fiscal_year_by_date($unit_expense->transaction_date);
-        $unit_expense->status = 0;
         $unit_expense->description = $request->input('description');
         // $unit_expense->approved_at = null;
         // $unit_expense->approved_by = null;

@@ -24,7 +24,7 @@ class UnitExpense extends Migration
             $table->string('expense_memo')->nullable();
             $table->date('expense_memo_date')->nullable();
             $table->text('expense_month');
-            $table->integer('status')->default(0)->comment('0=unapproved, 1=approved');
+            // $table->integer('status')->default(0)->comment('0=unapproved, 1=approved');
             $table->text('description')->nullable();
             // $table->dateTime('approved_at')->nullable();
             // $table->integer('approved_by')->nullable();
