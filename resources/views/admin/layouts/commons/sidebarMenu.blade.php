@@ -356,6 +356,22 @@
                                     </a>
                                 </li>
                             @endif
+                            @if(auth()->user()->can('create-unit-surrender'))
+                                <li class="nav-item">
+                                    <a href="{{route('unit-surrender.create-expense')}}" class="nav-link @if(in_array($page_name,['Add Unit Expense'])) active @endif">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>@lang('commons/sidebar_menu.Unit Expense')</p>
+                                    </a>
+                                </li>
+                            @endif
+                            @if(auth()->user()->can('create-unit-surrender'))
+                                <li class="nav-item">
+                                    <a href="{{route('unit-surrender.expense-list')}}" class="nav-link @if(in_array($page_name,['Unit Expense List'])) active @endif">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>@lang('commons/sidebar_menu.Unit Expense List')</p>
+                                    </a>
+                                </li>
+                            @endif
                         </ul>
                     </li>
                 @endif

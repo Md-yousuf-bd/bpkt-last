@@ -160,15 +160,30 @@ Route::group(['middleware' => ['auth', 'language']], function () {
     Route::group(['prefix' => 'unit-surrender', 'as' => 'unit-surrender'], function () {
         Route::get('/list', ['as' => '.index', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@index']);
         Route::get('/add', ['as' => '.create', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@create']);
+        Route::get('/add-unitExpense', ['as' => '.create-expense', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@create_unitExpense']);
+        Route::get('/expense-list', ['as' => '.expense-list', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@expense_list']);
         Route::post('/store', ['as' => '.store', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@store']);
+        Route::post('/store_expense', ['as' => '.store_expense', 'middleware' => ['permission:create-unit-surrender'], 'uses' => 'UnitSurrenderController@store_expense']);
         Route::get('/{unit_surrender}', ['as' => '.show', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@show']);
+
         Route::get('/edit/{unit_surrender}', ['as' => '.edit', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@edit']);
         Route::patch('/update/{unit_surrender}', ['as' => '.update', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@update']);
         Route::post('/get-list', ['as' => '.get_index', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@get_index']);
+        Route::post('/get-expense', ['as' => '.get_expense', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@get_expense']);
         Route::delete('/{unit_surrender}', ['as' => '.destroy', 'middleware' => ['permission:delete-unit-surrender'], 'uses' => 'UnitSurrenderController@destroy']);
+
         Route::post('/approved', ['as' => '.approved', 'middleware' => ['permission:approved-unit-surrender'], 'uses' => 'UnitSurrenderController@approved']);
         Route::post('/unapproved', ['as' => '.unapproved', 'middleware' => ['permission:unapproved-unit-surrender'], 'uses' => 'UnitSurrenderController@unapproved']);
     });
+    Route::group(['prefix' => 'unit-expense', 'as' => 'unit-expense'], function () {
+        Route::get('/edit_expense/{unit_expense}', ['as' => '.edit_expense', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@edit_expense']);
+        Route::get('/{unit_expense}', ['as' => '.show_expense', 'middleware' => ['permission:read-unit-surrender'], 'uses' => 'UnitSurrenderController@show_expense']);
+        Route::patch('/update_expense/{unit_expense}', ['as' => '.update_expense', 'middleware' => ['permission:edit-unit-surrender'], 'uses' => 'UnitSurrenderController@update_expense']);
+        Route::delete('/{unit_expense}', ['as' => '.delete', 'middleware' => ['permission:delete-unit-surrender'], 'uses' => 'UnitSurrenderController@delete']);
+    });
+
+    // // create new menu
+    // Route::group(['prefix' => ])
 
     Route::group(['prefix' => 'email', 'as' => 'email'], function () {
         Route::get('/list', ['as' => '.index', 'middleware' => ['permission:read-mail'], 'uses' => 'EmailController@index']);
