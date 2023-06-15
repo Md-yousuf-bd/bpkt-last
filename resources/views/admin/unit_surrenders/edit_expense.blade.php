@@ -59,7 +59,7 @@
                                         value="{{ $unit_expense->amount ?? 0 }}">
                                 </div>
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের তারিখ <span class="text-danger">*</span></label>
+                                    <label class="form-control-label">খরচের তারিখ <span class="text-danger">*</span></label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="transaction_date"
                                             name="transaction_date" readonly="readonly"
@@ -73,16 +73,16 @@
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের স্মারক</label>
+                                    <label class="form-control-label">খরচের স্মারক</label>
                                     <input type="text" name="surrender_memo" id="surrender_memo" class="form-control"
-                                        placeholder="খরছের স্মারক লিখুন" value="{{ $unit_expense->surrender_memo ?? '' }}">
+                                        placeholder="খরচের স্মারক লিখুন" value="{{ $unit_expense->surrender_memo ?? '' }}">
                                 </div>
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের স্মারকের তারিখ</label>
+                                    <label class="form-control-label">খরচের স্মারকের তারিখ</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="surrender_memo_date"
                                             name="surrender_memo_date" readonly="readonly"
-                                            placeholder="খরছের স্মারকের তারিখ লিখুন"
+                                            placeholder="খরচের স্মারকের তারিখ লিখুন"
                                             value="{{ $unit_expense->surrender_memo_date ?? '' }}">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-dark btn-sm" style="height:29px;" type="button"
@@ -149,7 +149,7 @@
                         min: "সমর্পন অর্থের পরিমান 1 বা এর বেশি হতে হবে।"
                     },
                     transaction_date: {
-                        required: "খরছের তারিখ ইনপুট দিন।"
+                        required: "খরচের তারিখ ইনপুট দিন।"
                     }
                 },
                 errorPlacement: function(error, element) {

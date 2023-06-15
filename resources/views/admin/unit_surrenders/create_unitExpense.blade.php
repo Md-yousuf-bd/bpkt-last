@@ -60,7 +60,7 @@
                                         value="@if ($old_data != null) {{ $old_data['amount'] }}@else{{ 1 }} @endif">
                                 </div>
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের তারিখ <span class="text-danger">*</span></label>
+                                    <label class="form-control-label">খরচের তারিখ <span class="text-danger">*</span></label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="transaction_date"
                                             name="transaction_date" readonly="readonly"
@@ -74,17 +74,17 @@
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের স্মারক</label>
+                                    <label class="form-control-label">খরচের স্মারক</label>
                                     <input type="text" name="expense_memo" id="expense_memo" class="form-control"
-                                        placeholder="খরছের স্মারক লিখুন"
+                                        placeholder="খরচের স্মারক লিখুন"
                                         value="@if ($old_data != null) {{ $old_data['expense_memo'] }} @endif">
                                 </div>
                                 <div class="form-group col-md-6 col-sm-12">
-                                    <label class="form-control-label">খরছের স্মারকের তারিখ</label>
+                                    <label class="form-control-label">খরচের স্মারকের তারিখ</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="expense_memo_date"
                                             name="expense_memo_date" readonly="readonly"
-                                            placeholder="খরছের স্মারকের তারিখ লিখুন"
+                                            placeholder="খরচের স্মারকের তারিখ লিখুন"
                                             value="@if ($old_data != null) {{ $old_data['expense_memo_date'] }} @endif">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-dark btn-sm" style="height:29px;" type="button"

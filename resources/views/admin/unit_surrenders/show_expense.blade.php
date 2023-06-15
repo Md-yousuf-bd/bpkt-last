@@ -80,7 +80,7 @@
                                 <table class="table table-bordered table-hover">
                                     <tr>
                                         <td colspan="3" style="text-align:left; vertical-align: center;">
-                                            <h6><b>ইউনিটে খরছের বিস্তারিত তথ্য</b></h6>
+                                            <h6><b>ইউনিটে খরচের বিস্তারিত তথ্য</b></h6>
                                         </td>
                                         <td style="text-align: right;">
                                             <small>তৈরি হয়েছেঃ {{ $created_at }}</small><br>
@@ -107,9 +107,9 @@
                                         <td>{{ $approved_at }}</td>
                                     </tr> --}}
                                     <tr>
-                                        <th>খরছের স্মারক</th>
+                                        <th>খরচের স্মারক</th>
                                         <td>{{ $unit_expense->surrender_memo ?? '' }}</td>
-                                        <th>খরছের স্মারকের তারিখ</th>
+                                        <th>খরচের স্মারকের তারিখ</th>
                                         <td>{{ $surrender_memo_date }}</td>
                                     </tr>
                                     <tr>
@@ -125,7 +125,7 @@
                                 <table class="table table-bordered table-hover">
                                     <tr>
                                         <td colspan="2" style="text-align:center; vertical-align: center;">
-                                            <h6><b>ইউনিটে খরছের বিস্তারিত তথ্য</b></h6>
+                                            <h6><b>ইউনিটে খরচের বিস্তারিত তথ্য</b></h6>
                                         </td>
                                         <td colspan="2" style="text-align: center;">
                                             <small>তৈরি হয়েছেঃ {{ $created_at }}</small><br>
@@ -158,11 +158,11 @@
                                         <td>{{ $approved_at }}</td>
                                     </tr> --}}
                                     <tr>
-                                        <th>খরছের স্মারক</th>
+                                        <th>খরচের স্মারক</th>
                                         <td>{{ $unit_expense->surrender_memo ?? '' }}</td>
                                     </tr>
                                     <tr>
-                                        <th>খরছের স্মারকের তারিখ</th>
+                                        <th>খরচের স্মারকের তারিখ</th>
                                         <td>{{ $surrender_memo_date }}</td>
                                     </tr>
                                     <tr>

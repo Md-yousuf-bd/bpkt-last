@@ -90,10 +90,14 @@ return [
 
     'Unit Surrender List' => 'ইউনিট থেকে সমর্পণ তালিকা',
     'Unit Surrenders' => 'ইউনিট থেকে সমর্পণ',
+
     'Add Unit Surrender' => 'ইউনিট থেকে সমর্পণ যুক্ত করুন',
-    'Add Unit Expense' => 'ইউনিট থেকে খরছ যুক্ত করুন',
-    'Unit Expense List' => 'ইউনিট থেকে খরছ তালিকা',
+    'Add Unit Expense' => 'ইউনিট থেকে খরচ যুক্ত করুন',
+    'Unit Expense List' => 'ইউনিট থেকে খরচ তালিকা',
+    'Unit Expense' => 'ইউনিট থেকে খরচ',
+    // 'Unit Expense new' => 'ইউনিট থেকে খরচ',
     'Edit Unit Surrender' => 'ইউনিট থেকে সমর্পণ পরিবর্তন করুন',
+    'Edit Unit Expense' => 'ইউনিট থেকে খরচ পরিবর্তন করুন',
 
     'Edit Master Allotment Letter' => 'সাধারণ বরাদ্দ চিঠি পরিবর্তন করুন',
 
