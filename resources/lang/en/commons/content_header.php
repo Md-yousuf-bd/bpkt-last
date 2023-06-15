@@ -87,9 +87,11 @@ return [
     'Unit Surrender List' => 'Unit Surrender List',
     'Unit Surrenders' => 'Unit Surrenders',
     'Add Unit Surrender' => 'Add Unit Surrender',
+    'Edit Unit Surrender' => 'Edit Unit Surrender',
+    'Unit Expense List' => 'Unit Expense List',
+    'Unit Expense' => 'Unit Expense',
     'Add Unit Expense' => 'Add Unit Expense',
     'Unit Expense List' => 'Unit Expense List',
-    'Edit Unit Surrender' => 'Edit Unit Surrender',
 
     'Edit Master Allotment Letter' => 'Edit Master Allotment Letter',
 

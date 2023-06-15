@@ -400,9 +400,9 @@ class UnitSurrenderController extends Controller
         Logs::store(Auth::user()->name . ' ' . $unit_expense->unit->name_bangla . ' থেকে ' . otherHelper::en2bn($unit_expense->code->code) . ' কোডে ' . otherHelper::en2bn(otherHelper::change_date_format($unit_expense->transaction_date)) . ' ইং তারিখে ' . otherHelper::en2bn(otherHelper::taka_format($unit_expense->amount)) . ' টাকা সমর্পণের তথ্য যুক্ত করেন।', 'Add Unit Surrender', 'success', Auth::user()->id);
 
         if ($request->submitButton == 'fastSubmitForm') {
-            return redirect()->route('unit-surrender.create-expense')->with('success', 'ইউনিট থেকে খরছের তথ্য সফলভাবে যুক্ত হয়েছে!')->withInput();
+            return redirect()->route('unit-surrender.create-expense')->with('success', 'ইউনিট থেকে খরচের তথ্য সফলভাবে যুক্ত হয়েছে!')->withInput();
         } else {
-            return redirect()->route('unit-surrender.get_index')->with('success', 'ইউনিট থেকে খরছের তথ্য সফলভাবে যুক্ত হয়েছে!');
+            return redirect()->route('unit-surrender.get_index')->with('success', 'ইউনিট থেকে খরচের তথ্য সফলভাবে যুক্ত হয়েছে!');
         }
     }
 
@@ -443,11 +443,11 @@ class UnitSurrenderController extends Controller
     public function show_expense(unit_expense $unit_expense)
     {
         //
-        $data['page_name'] = "Show Unit Surrender";
+        $data['page_name'] = "Show Unit Expense";
         $data['unit_expense'] = $unit_expense;
         $data['breadcumb'] = array(
             array('Home', 'home'),
-            array('Unit Surrenders', 'unit-surrender.index'),
+            array('Unit Expense', 'unit-surrender.index'),
             array('Show', 'active')
         );
         return view('admin.unit_surrenders.show_expense', $data);
@@ -476,12 +476,12 @@ class UnitSurrenderController extends Controller
     {
         //
 
-        $data['page_name'] = "Edit Unit Surrender";
+        $data['page_name'] = "Edit Unit Expense";
         $data['codes'] = Code::all();
         $data['unit_expense'] = $unit_expense;
         $data['breadcumb'] = array(
             array('Home', 'home'),
-            array('Unit Surrenders', 'unit-surrender.index'),
+            array('Unit Expense', 'unit-surrender.index'),
             array('Edit', 'active')
         );
         return view('admin.unit_surrenders.edit_expense', $data);
@@ -540,8 +540,8 @@ class UnitSurrenderController extends Controller
         $unit_expense->save();
 
         Logs::store(Auth::user()->name . ' ' . $unit_expense->unit->name_bangla . ' থেকে ' . otherHelper::en2bn($unit_expense->code->code) . ' কোডে ' . otherHelper::en2bn(otherHelper::change_date_format($unit_expense->transaction_date)) . ' ইং তারিখে ' . otherHelper::en2bn(otherHelper::taka_format($unit_expense->amount)) . ' টাকা সমর্পণের তথ্য পরিবর্তন করেন।', 'Edit Unit Surrender', 'success', Auth::user()->id);
-        // return redirect()->back()->with('success', 'ইউনিট থেকে খরছের তথ্য সফলভাবে পরিবর্তন হয়েছে!');
-        return redirect()->route('unit-surrender.expense-list')->with('success', 'ইউনিট থেকে খরছের তথ্য সফলভাবে পরিবর্তন হয়েছে!');
+        // return redirect()->back()->with('success', 'ইউনিট থেকে খরচের তথ্য সফলভাবে পরিবর্তন হয়েছে!');
+        return redirect()->route('unit-surrender.expense-list')->with('success', 'ইউনিট থেকে খরচের তথ্য সফলভাবে পরিবর্তন হয়েছে!');
     }
 
     /**
@@ -565,7 +565,7 @@ class UnitSurrenderController extends Controller
         $deleted = $unit_expense;
         $unit_expense->delete();
         Logs::store(Auth::user()->name . ' ' . $deleted->unit->name_bangla . ' থেকে ' . otherHelper::en2bn($deleted->code->code) . ' কোডে ' . otherHelper::en2bn(otherHelper::change_date_format($deleted->transaction_date)) . ' ইং তারিখে ' . otherHelper::en2bn(otherHelper::taka_format($deleted->amount)) . ' টাকা সমর্পণের তথ্য ডিলিট করেন।', 'Delete Unit Surrender', 'success', Auth::user()->id);
-        return redirect()->back()->with('success', 'ইউনিট থেকে খরছের তথ্য সফলভাবে ডিলিট হয়েছে!');
+        return redirect()->back()->with('success', 'ইউনিট থেকে খরচের তথ্য সফলভাবে ডিলিট হয়েছে!');
     }
 
 

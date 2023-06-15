@@ -24,7 +24,7 @@
             <div class="col-lg-12 ">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">ইউনিটে খরছের তালিকা</h5>
+                        <h5 class="card-title">ইউনিটে খরচের তালিকা</h5>
                         <div class="card-tools">
                             <button class="btn btn-sm btn-light text-default" role="button" data-toggle="modal"
                                 data-target="#filter"><span class="fa fa-filter"></span> ফিল্টার &nbsp; &nbsp;<span
@@ -32,7 +32,7 @@
                             @if (auth()->user()->can('create-unit-surrender'))
                                 <a href="{{ route('unit-surrender.create-expense') }}"
                                     class="btn btn-sm btn-default pull-right"><span class="fa fa-plus-circle"></span> ইউনিটে
-                                    খরছের তথ্য যুক্ত করুন</a>
+                                    খরচের তথ্য যুক্ত করুন</a>
                             @endif
                         </div>
                     </div>
@@ -72,9 +72,9 @@
                                         <th data-sl="6">অনুমোদনের তারিখ</th>
                                         <th data-sl="7">অনুমোদনকারী</th> --}}
                                         <th data-sl="8">অর্থবছর</th>
-                                        <th data-sl="9">খরছের তারিখ</th>
-                                        <th data-sl="10">খরছের স্মারক</th>
-                                        <th data-sl="11">খরছের স্মারকের তারিখ</th>
+                                        <th data-sl="9">খরচের তারিখ</th>
+                                        <th data-sl="10">খরচের স্মারক</th>
+                                        <th data-sl="11">খরচের স্মারকের তারিখ</th>
                                         <th data-sl="12" style="min-width: 200px;">বর্ণনা</th>
                                         <th data-sl="13">সর্বশেষ সংস্কারক</th>
                                         <th data-sl="14" style="min-width: 200px;">সর্বশেষ সংস্করণ</th>
@@ -328,7 +328,7 @@
             ],
             buttons: [{
                     extend: 'print',
-                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরছের তালিকা',
+                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরচের তালিকা',
                     footer: true,
                     exportOptions: {
                         stripHtml: false,
@@ -338,7 +338,7 @@
                 },
                 {
                     extend: 'excel',
-                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরছের তালিকা',
+                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরচের তালিকা',
                     footer: true,
                     exportOptions: {
                         columns: ':visible'
@@ -347,7 +347,7 @@
                 },
                 {
                     extend: 'copy',
-                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরছের তালিকা',
+                    title: '{{ config('app.name', 'Laravel') }}: ইউনিটে খরচের তালিকা',
                     footer: true,
                     exportOptions: {
                         columns: ':visible'
@@ -357,7 +357,7 @@
                 {
                     text: 'Column Settings',
                     action: function(e, dt, node, config) {
-                        showUserTablesCombinationModal(unitExpenseTableColumnNames, 'খরছের তালিকা',
+                        showUserTablesCombinationModal(unitExpenseTableColumnNames, 'খরচের তালিকা',
                             'unitExpenseTable');
                     }
                 },

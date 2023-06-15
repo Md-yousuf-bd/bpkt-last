@@ -356,6 +356,22 @@
                                     </a>
                                 </li>
                             @endif
+
+                        </ul>
+                    </li>
+                @endif
+                @if(auth()->user()->can('read-unit-surrender')
+                    ||auth()->user()->can('create-unit-surrender')
+                    )
+                    <li class="nav-item has-treeview  @if(in_array($page_name,['Unit Expense List','Add Unit Expense','Edit Unit Expense','Show Unit Expense'])) menu-open @endif">
+                        <a href="#" class="nav-link  @if(in_array($page_name,['Unit Expense List','Add Unit Expense','Edit Unit Expense','Show Unit Expense'])) active @endif">
+                            <i class="nav-icon fa fa-money-bill"></i>
+                            <p>
+                                @lang('commons/sidebar_menu.Unit Expense new')
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
                             @if(auth()->user()->can('create-unit-surrender'))
                                 <li class="nav-item">
                                     <a href="{{route('unit-surrender.create-expense')}}" class="nav-link @if(in_array($page_name,['Add Unit Expense'])) active @endif">
@@ -372,6 +388,7 @@
                                     </a>
                                 </li>
                             @endif
+
                         </ul>
                     </li>
                 @endif
