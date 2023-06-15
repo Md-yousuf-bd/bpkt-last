@@ -92,6 +92,7 @@ return [
     'Unit Surrenders' => 'ইউনিট থেকে সমর্পণ',
     'Add Unit Surrender' => 'ইউনিট থেকে সমর্পণ যুক্ত করুন',
     'Add Unit Expense' => 'ইউনিট থেকে খরছ যুক্ত করুন',
+    'Unit Expense List' => 'ইউনিট থেকে খরছ তালিকা',
     'Edit Unit Surrender' => 'ইউনিট থেকে সমর্পণ পরিবর্তন করুন',
 
     'Edit Master Allotment Letter' => 'সাধারণ বরাদ্দ চিঠি পরিবর্তন করুন',

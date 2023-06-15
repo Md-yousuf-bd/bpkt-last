@@ -38,6 +38,7 @@ return [
     'Unit Allotments' => 'ইউনিটে বরাদ্দ',
     'Unit Surrenders' => 'ইউনিট থেকে সমর্পণ',
     'Unit Expense' => 'ইউনিটে খরচের হিসাব',
+    'Unit Expense List' => 'ইউনিটে খরচের তালিকা',
     'Letters' => 'চিঠি',
     'Master Letter' => 'সাধারণ চিঠি',
     'Report' => 'প্রতিবেদন',
