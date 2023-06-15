@@ -365,7 +365,8 @@
                     )
                     <li class="nav-item has-treeview  @if(in_array($page_name,['Unit Expense List','Add Unit Expense','Edit Unit Expense','Show Unit Expense'])) menu-open @endif">
                         <a href="#" class="nav-link  @if(in_array($page_name,['Unit Expense List','Add Unit Expense','Edit Unit Expense','Show Unit Expense'])) active @endif">
-                            <i class="nav-icon fa fa-money-bill"></i>
+                            {{-- <i class="nav-icon fa fa-money-bill"></i> --}}
+                            <i class="nav-icon fa fa-money-bill-wave-alt"></i>
                             <p>
                                 @lang('commons/sidebar_menu.Unit Expense new')
                                 <i class="right fas fa-angle-left"></i>
@@ -420,11 +421,19 @@
                                     </a>
                                 </li>
                             @endif
+                            @if(auth()->user()->can('read-allotment-report'))
+                            <li class="nav-item">
+                                <a href="{{route('report.allotment-report-new')}}" class="nav-link @if(in_array($page_name,['Allotment Report'])) active @endif">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>@lang('commons/sidebar_menu.Allotment Report new')</p>
+                                </a>
+                            </li>
+                            @endif
                         </ul>
                     </li>
                 @endif
                  {{-- new --}}
-                @if(auth()->user()->can('read-allotment-report')
+                {{-- @if(auth()->user()->can('read-allotment-report')
                     ||auth()->user()->can('read-top-sheet'))
                     <li class="nav-item has-treeview @if(in_array($page_name,['Allotment Report','Top Sheet'])) menu-open @endif">
                         <a href="#" class="nav-link  @if(in_array($page_name,['Allotment Report','Top Sheet'])) active @endif">
@@ -453,7 +462,7 @@
                             @endif
                         </ul>
                     </li>
-                @endif
+                @endif --}}
 
 
 
