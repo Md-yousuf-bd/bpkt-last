@@ -109,7 +109,7 @@ return [
 
     'Reports' => 'প্রতিবেদন',
     'Allotment Report' => 'বরাদ্দের প্রতিবেদন',
-    'Allotment Report new' => 'নতুন বরাদ্দের প্রতিবেদন',
+    'Allotment Report new' => 'বরাদ্দ খরচের প্রতিবেদন',
     'Top Sheet' => 'টপ শীট',
     'Top Sheet new' => 'নতুন টপ শীট',
 
